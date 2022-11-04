@@ -12,7 +12,7 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-extern char **environ:
+extern char **environ;
 /**
  * struct builtins - Has builtins and associated funcs
  * @arg: Builtins name
@@ -30,3 +30,4 @@ char *save_path(char *tmp, char *path);
 void exit_shell(char **args, char *line, char **env);
 void env_shell(char **args, char *line, char **env);
 
+#endif

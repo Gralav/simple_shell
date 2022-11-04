@@ -29,6 +29,6 @@ void env_shell(char **args, char *line, char **env)
 	write(1, "\n", 1);
 	i++;
 }
-(void)args;
-(void)line;
+(void)args
+(void)line
 }
