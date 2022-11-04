@@ -23,7 +23,7 @@ char *find_path(char *filename, char *tmp, char *er)
 		dir = opendir(file_path);
 		if (!dir)
 		{
-			printf("Error! Unable to open directory.\n")
+			printf("Error! Unable to open directory.\n");
 				exit(0);
 		}
 		while ((sd = readdir(dir)))
@@ -36,7 +36,7 @@ char *find_path(char *filename, char *tmp, char *er)
 					return (ret);
 			}
 		}
-		closedir(dir)
+		closedir(dir);
 			file_path = strtok(NULL, ":");
 	}
 	path = NULL;

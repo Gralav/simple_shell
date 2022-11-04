@@ -23,10 +23,10 @@ void shell(int ac, char **av, char **env);
 int check_for_builtins(char **args, char *line, char **env);
 int builtins_checker(char **args);
 int bridge(char *check, char **args);
-char *_getenv(char *env)
-char *find_path(char *filename, char *tmp, char *er)
-char *read_dir(char *er, struct dirent *s, char *fil, int l, char *fp, char *t)
-char *save_path(char *tmp, char *path)
-void exit_shell(char **args, char *line, char **env)
-void env_shell(char **args, char *line, char **env)
+char *_getenv(char *env);
+char *find_path(char *filename, char *tmp, char *er);
+char *read_dir(char *er, struct dirent *s, char *fil, int l, char *fp, char *t);
+char *save_path(char *tmp, char *path);
+void exit_shell(char **args, char *line, char **env);
+void env_shell(char **args, char *line, char **env);
 
