@@ -17,7 +17,7 @@ char *_impenv(char *env)
 	}
 	while (temp[n] != '\0')
 	{
-		if (_strcmp(temp, env) == 0)
+		if (strcmp(temp, env) == 0)
 			res = strstr(temp, "/");
 		n++;
 	}
