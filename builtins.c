@@ -19,16 +19,18 @@ void exit_shell(char **args, char *line, char **env)
  * @line: User input buffer
  * @env: Environment
  */
+
 void env_shell(char **args, char *line, char **env)
 {
 	int size, i = 0;
 
 	while (env[i] != NULL)
+	{
 		size = _strlen(env[i]);
-	write(1, env[i], size);
-	write(1, "\n", 1);
-	i++;
-}
-(void)args
-(void)line
+		write(1, env[i], size);
+		write(1, "\n", 1);
+		i++;
+	}
+	(void)args;
+	(void)line;
 }
