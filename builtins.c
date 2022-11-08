@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * exit_shell - This will run the builtin exit
+ * exit_shell -  will run the builtin exit
  * @line: Line buffer of user input
  * @args: Arguments from user
  * @env: Environment
