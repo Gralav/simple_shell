@@ -4,7 +4,7 @@
  * @filename: file name
  * @tmp: saves the PATH string
  * @er: an error message
- * Return: Success - path/filename, failure - er
+ * Return: Success - path/filename, failure - er.
  */
 char *find_path(char *filename, char *tmp, char *er)
 {
