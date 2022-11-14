@@ -2,7 +2,7 @@
 /**
  * _impenv - gets env of input
  * @env: input
- * Return: env without =
+ * Return: env without =.
  */
 char *_impenv(char *env)
 {
