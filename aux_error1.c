@@ -7,7 +7,7 @@
  * @msg: message to print
  * @error: output message
  * @ver_str: counter lines
- * Return: error message
+ * Return: error  message
  */
 char *strcat_cd(data_shell *datash, char *msg, char *error, char *ver_str)
 {
