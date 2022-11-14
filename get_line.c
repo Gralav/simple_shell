@@ -5,7 +5,7 @@
  * @lineptr: Buffer that store the input str
  * @buffer: str that is been called to line
  * @n: size of line
- * @j: size of buffer
+ * @j: size of buffer.
  */
 void bring_line(char **lineptr, size_t *n, char *buffer, size_t j)
 {
