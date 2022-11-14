@@ -4,7 +4,7 @@
  * _memcpy - copies information between void pointers.
  * @newptr: destination pointer.
  * @ptr: source pointer.
- * @size: size of the new pointer.
+ * @size: size of the new pointer
  *
  * Return: no return.
  */
