@@ -4,7 +4,7 @@
  * @line: Line buffer of user input
  * @args: Arguments from user
  * @env: Environment
- * Return: Void
+ * Return: Void.
  */
 void exit_shell(char **args, char *line, char **env)
 {
