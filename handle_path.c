@@ -4,7 +4,7 @@
  * @filename: file name
  * @tmp: saves the PATH string
  * @er: an error message
- * Return: Success - path/filename, failure - er.
+ * Return: Success - path/filename, failure - er
  */
 char *find_path(char *filename, char *tmp, char *er)
 {
@@ -24,7 +24,7 @@ char *find_path(char *filename, char *tmp, char *er)
 		if (!dir)
 		{
 			printf("Error! Unable to open directory.\n");
-				exit(0);
+			exit(0);
 		}
 		while ((sd = readdir(dir)))
 		{
@@ -37,14 +37,15 @@ char *find_path(char *filename, char *tmp, char *er)
 			}
 		}
 		closedir(dir);
-			file_path = strtok(NULL, ":");
+		file_path = strtok(NULL, ":");
 	}
 	path = NULL;
 	free(tmp);
 	return (er);
 }
+
 /**
- * read_dir - opens and reads directory file names in search of file
+ * read_dir - opens and reads directory file names in search of fil
  * @er: error message
  * @s: struct containing info about a files in a directory
  * @fil: name of file being searched for
