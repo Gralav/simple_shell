@@ -20,7 +20,7 @@ char *_getenv(char *env)
 	while (temp[n] != '\0')
 	{
 		if (_strcmp(temp, env) == 0)
-			res = _strstr(temp, "/");
+			res = _strspn(temp, "/");
 		n++;
 	}
 	return (res);
