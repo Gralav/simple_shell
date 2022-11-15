@@ -1,10 +1,11 @@
 #include "shell.h"
+
 /**
- * exit_shell -  will run the builtin exit
+ * exit_shell - This will run the builtin exit
  * @line: Line buffer of user input
  * @args: Arguments from user
  * @env: Environment
- * Return: Void.
+ * Return: Voi
  */
 void exit_shell(char **args, char *line, char **env)
 {
@@ -19,14 +20,14 @@ void exit_shell(char **args, char *line, char **env)
  * @line: User input buffer
  * @env: Environment
  */
-
 void env_shell(char **args, char *line, char **env)
+
 {
 	int size, i = 0;
 
 	while (env[i] != NULL)
 	{
-		size = strlen(env[i]);
+		size = _strlen(env[i]);
 		write(1, env[i], size);
 		write(1, "\n", 1);
 		i++;
