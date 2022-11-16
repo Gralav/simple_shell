@@ -12,7 +12,7 @@ void execution2(char **tokenized, char *command, char *mypath, char *buffer)
 {
 	int child_pid = 0, status, exitstatus = 0;
 
-	if (tokenized[0] != NULL && (_strcmp(tokenized[0], "exit") == 0))
+	if (tokenized[0] != NULL && (_sitrcmp(tokenized[0], "exit") == 0))
 	{
 		_puts("\n");
 		free_grid(tokenized);
@@ -40,8 +40,7 @@ void execution2(char **tokenized, char *command, char *mypath, char *buffer)
 		}
 	}
 	else
-	{
 		printerror(2, tokenized);
-		(void)exitstatus;
-		free_grid(tokenized);
-	}
+	(void)exitstatus;
+	free_grid(tokenized);
+}
