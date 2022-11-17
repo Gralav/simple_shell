@@ -23,7 +23,7 @@ void free_all_dp(char **ptr)
 /**
  * parent_free_commands - free the buffer and the commands
  * @buffer: buffer in getline
- * commands: double pointer that store all the commands inserted
+ * @commands: double pointer that store all the commands inserted
  * Return: Nothing(void)
  */
 void parent_free_commands(char *buffer, char **commands)
